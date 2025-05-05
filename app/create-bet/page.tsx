@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Trophy, Handshake, Shield } from "lucide-react"
+import ConnectWalletButton from "@/components/ConnectWeb3Wallet"
 
 export default function CreateBet() {
   const router = useRouter()
@@ -19,9 +20,7 @@ export default function CreateBet() {
               Among Friends
             </span>
           </div>
-          <Button className="bg-green-500 hover:bg-green-400 text-white rounded-full px-6 font-medium">
-            Wallet Connected ✓
-          </Button>
+          <ConnectWalletButton />
         </div>
       </header>
 

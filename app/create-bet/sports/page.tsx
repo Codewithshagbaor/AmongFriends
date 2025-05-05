@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ArrowLeft, Trophy } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import ConnectWalletButton from "@/components/ConnectWeb3Wallet"
 
 export default function SportsBet() {
   const router = useRouter()
@@ -24,9 +25,7 @@ export default function SportsBet() {
               Among Friends
             </span>
           </div>
-          <Button className="bg-green-500 hover:bg-green-400 text-white rounded-full px-6 font-medium">
-            Wallet Connected ✓
-          </Button>
+          <ConnectWalletButton />
         </div>
       </header>
 

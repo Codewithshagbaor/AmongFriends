@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ArrowLeft, Search } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
+import ConnectWalletButton from "@/components/ConnectWeb3Wallet"
 
 export default function JoinBet() {
   const router = useRouter()
@@ -46,9 +47,7 @@ export default function JoinBet() {
               Among Friends
             </span>
           </div>
-          <Button className="bg-green-500 hover:bg-green-400 text-white rounded-full px-6 font-medium">
-            Wallet Connected ✓
-          </Button>
+          <ConnectWalletButton />
         </div>
       </header>
 
